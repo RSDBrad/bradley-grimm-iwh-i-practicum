@@ -147,4 +147,5 @@ app.post('/update', async (req, res) => {
 
 
 // * Localhost
-app.listen(3000, () => console.log('Listening on http://localhost:3000'));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));
